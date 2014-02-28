@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PHL Flight Info</title>
+<link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/flightSearch.js"></script> 
+</head>
+<body>
+  <div id="header">
+    <h1>PHL Flight Search</h1>
+  </div>
+	<div id="flights"></div>
+  <div id="search">
+    <form name="searchForm" action="">
+      <label>Direction: </label><select id="directionSelect">
+        <option value="Departure">Departure</option>
+        <option value="Arrival">Arrival</option>
+      </select>
+      <label>Flight Number: </label><input type="text" id="flightNumText">
+      <label>Airline: </label><select id="airlineSelect">
+        <option value=""></option>
+        <option value="AS">Alaska Airlines</option>
+        <option value="AC">Air Canada</option>
+        <option value="QK">Air Canada Jazz</option>
+        <option value="FL">AirTran Airways</option>
+        <option value="AA">American Airlines</option>
+        <option value="BA">British Airways</option>
+        <option value="DL">Delta Air Lines</option>
+        <option value="F9">Frontier Airlines</option>
+        <option value="LH">Lufthansa Airlines</option>
+        <option value="WN">Southwest Airlines</option>
+        <option value="NK">Spirit Airlines</option>
+        <option value="UA">United</option>
+        <option value="US">US Airways</option>
+        <option value="VX">Virgin America</option>
+      </select>
+         <a href="#" class="btnSubmit">Search</a>
+    </form>
+  </div>
+  <div id="footer">
+    <p>Created by Joshua Felker</p>
+  </div>
+</body>
+</html>
