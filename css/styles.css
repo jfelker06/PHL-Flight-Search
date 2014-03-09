@@ -140,7 +140,6 @@ input {
   background-color: #FFFFFF;
   padding: 6px 6px;
   border: 2px solid #E6B800;
-  border-radius: 6px;
   margin-bottom: 8px;
   
 }
@@ -189,29 +188,33 @@ input {
 
 }
 
-.flight .statusOnTime {
+.statusDelayed, 
+.statusCanceled, 
+.statusComplete, 
+.statusOther, 
+.statusOnTime {
+  font-weight: bold;
+  text-align: center;
+}
+
+.statusOnTime {
   color: green;
-  font-weight: bold;
 }
 
-.flight .statusDelayed {
+.statusDelayed {
   color: orange;
-  font-weight: bold;
 }
 
-.flight .statusCanceled {
+.statusCanceled {
   color: red;
-  font-weight: bold;
 }
 
-.flight .statusComplete {
+.statusComplete {
   color: blue;
-  font-weight: bold;
 }
 
-.flight .statusOther {
+.statusOther {
   color: orange;
-  font-weight: bold;
 }
 
 .flight .terminal {
@@ -228,4 +231,11 @@ input {
 
 .flight .septa {
 
+}
+.ui-accordion-header {
+  text-align: center;
+  background-color: #00005C;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 10px;
 }
